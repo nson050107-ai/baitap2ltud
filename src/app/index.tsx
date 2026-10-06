@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { router } from "expo-router";
+import { useState } from "react";
 import {
   KeyboardAvoidingView,
   Platform,
@@ -19,13 +19,38 @@ export default function App() {
 
   const trimmedName = name.trim();
   const trimmedStudentId = studentId.trim();
+  const studentIdPattern = /^B[A-Z]{2}\d{6}$/;
+  const isValidStudentId = (value: string) => studentIdPattern.test(value.toUpperCase());
   const nameError = submitted && !trimmedName;
   const studentIdError = submitted && !trimmedStudentId;
+  const invalidStudentIdFormat = submitted && trimmedStudentId && !isValidStudentId(trimmedStudentId);
+
+  const handleStudentIdChange = (value: string) => {
+    const raw = value.replace(/[^a-zA-Z0-9]/g, "").toUpperCase();
+    if (!raw) {
+      setStudentId("");
+      return;
+    }
+
+    const normalized = raw.startsWith("B") ? raw.slice(1) : raw;
+    let letters = "";
+    let digits = "";
+
+    for (const char of normalized) {
+      if (/[A-Z]/.test(char) && letters.length < 2) {
+        letters += char;
+      } else if (/[0-9]/.test(char) && digits.length < 6) {
+        digits += char;
+      }
+    }
+
+    setStudentId(`B${letters}${digits}`.slice(0, 9));
+  };
 
   const handleContinue = () => {
     setSubmitted(true);
 
-    if (!trimmedName || !trimmedStudentId) {
+    if (!trimmedName || !trimmedStudentId || !isValidStudentId(trimmedStudentId)) {
       return;
     }
 
@@ -45,31 +70,29 @@ export default function App() {
           contentContainerStyle={styles.container}
           keyboardShouldPersistTaps="handled"
         >
-          <View style={styles.row}>
-            <View style={[styles.box, styles.halfBox, styles.box1]}>
+          <View style={styles.layout}>
+            <View style={[styles.box, styles.box1]}>
               <Text style={styles.boxText}>1</Text>
             </View>
-            <View style={[styles.box, styles.halfBox, styles.box2]}>
+            <View style={[styles.box, styles.box2]}>
               <Text style={styles.boxText}>2</Text>
             </View>
-          </View>
 
-          <View style={styles.middleRow}>
-            <View style={styles.smallBoxes}>
-              <View style={[styles.box, styles.smallBox, styles.box3]}>
+            <View style={styles.middleRow}>
+              <View style={[styles.box, styles.middleBox, styles.box3]}>
                 <Text style={[styles.boxText, styles.textBlack]}>3</Text>
               </View>
-              <View style={[styles.box, styles.smallBox, styles.box4]}>
+              <View style={[styles.box, styles.middleBox, styles.box4]}>
                 <Text style={styles.boxText}>4</Text>
               </View>
+              <View style={[styles.box, styles.middleBox, styles.box5]}>
+                <Text style={styles.boxText}>5</Text>
+              </View>
             </View>
-            <View style={[styles.box, styles.box5]}>
-              <Text style={styles.boxText}>5</Text>
-            </View>
-          </View>
 
-          <View style={[styles.box, styles.box6]}>
-            <Text style={styles.boxText}>6</Text>
+            <View style={[styles.box, styles.box6]}>
+              <Text style={styles.boxText}>6</Text>
+            </View>
           </View>
 
           <View style={styles.form}>
@@ -77,23 +100,28 @@ export default function App() {
               style={[styles.input, nameError && styles.inputError]}
               value={name}
               onChangeText={setName}
-              placeholder="Tên"
+              placeholder="UserName"
               autoCapitalize="words"
             />
             {nameError && (
-              <Text style={styles.errorText}>Vui lòng nhập tên.</Text>
+              <Text style={styles.errorText}>Vui lòng nhập UserName.</Text>
             )}
 
             <TextInput
-              style={[styles.input, studentIdError && styles.inputError]}
+              style={[styles.input, (studentIdError || invalidStudentIdFormat) && styles.inputError]}
               value={studentId}
-              onChangeText={setStudentId}
-              placeholder="Mã số sinh viên"
+              onChangeText={handleStudentIdChange}
+              placeholder="Ví dụ: BXX123456"
               autoCapitalize="characters"
+              maxLength={9}
+              keyboardType="default"
             />
             {studentIdError && (
+              <Text style={styles.errorText}>Vui lòng nhập MSSV.</Text>
+            )}
+            {!studentIdError && invalidStudentIdFormat && (
               <Text style={styles.errorText}>
-                Vui lòng nhập mã số sinh viên.
+                MSSV phải có dạng BXX123456 (2 chữ cái + 6 chữ số).
               </Text>
             )}
           </View>
@@ -110,22 +138,44 @@ export default function App() {
 const styles = StyleSheet.create({
   screen: { flex: 1, backgroundColor: "#fff" },
   keyboardContainer: { flex: 1 },
-  container: { flexGrow: 1, padding: 20, backgroundColor: "#fff" },
-  row: { height: 80, flexDirection: "row", gap: 10, marginBottom: 10 },
-  middleRow: { height: 120, flexDirection: "row", gap: 10, marginBottom: 10 },
-  smallBoxes: { flex: 1, flexDirection: "row", gap: 10 },
-  box: { alignItems: "center", justifyContent: "center" },
-  halfBox: { flex: 1 },
-  smallBox: { flex: 1 },
-  boxText: { color: "#fff", fontSize: 40, fontWeight: "bold" },
+  container: {
+    flexGrow: 1,
+    alignItems: "center",
+    paddingHorizontal: 12,
+    paddingTop: 20,
+    paddingBottom: 20,
+    backgroundColor: "#fff",
+  },
+  layout: { width: "100%", maxWidth: 600, gap: 10 },
+  middleRow: {
+    width: "76%",
+    flexDirection: "row",
+    gap: 10,
+  },
+  box: {
+    alignItems: "center",
+    justifyContent: "center",
+    overflow: "hidden",
+  },
+  boxText: { color: "#fff", fontSize: 48, fontWeight: "700" },
   textBlack: { color: "#000" },
-  box1: { backgroundColor: "#2D7EE4" },
-  box2: { backgroundColor: "#EF3C3D" },
-  box3: { backgroundColor: "#F7C617" },
-  box4: { backgroundColor: "#2CA05A" },
-  box5: { flex: 1, backgroundColor: "#7A3EE8" },
-  box6: { height: 120, marginBottom: 16, backgroundColor: "#F37414" },
-  form: { gap: 6 },
+  box1: { height: 115, backgroundColor: "#287fe5" },
+  box2: { height: 115, backgroundColor: "#ff3b3f" },
+  middleBox: { flex: 1, height: 240 },
+  box3: { backgroundColor: "#ffd21c" },
+  box4: { backgroundColor: "#2caf6c" },
+  box5: { backgroundColor: "#7d3fe0" },
+  box6: {
+    height: 200,
+    backgroundColor: "#ff7611",
+  },
+  form: {
+    width: "100%",
+    maxWidth: 600,
+    gap: 8,
+    paddingTop: 10,
+    paddingBottom: 12,
+  },
   input: {
     height: 48,
     paddingHorizontal: 14,
@@ -142,7 +192,6 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     minWidth: 120,
     alignItems: "center",
-    marginTop: "auto",
     paddingHorizontal: 28,
     paddingVertical: 12,
     borderRadius: 8,

@@ -11,15 +11,15 @@ export default function Page2() {
 
   return (
     <SafeAreaView style={styles.container} edges={["top", "left", "right"]}>
-      <Pressable style={styles.button} onPress={() => router.replace("/")}>
-        <Text style={styles.buttonText}>Back</Text>
+      <Pressable style={styles.backButton} onPress={() => router.replace("/")}>
+        <Text style={styles.backButtonText}>←</Text>
       </Pressable>
 
       <View style={styles.information}>
         <Text style={styles.title}>Thông tin sinh viên</Text>
-        <Text style={styles.label}>Tên</Text>
+        <Text style={styles.label}>UserName</Text>
         <Text style={styles.value}>{name ?? ""}</Text>
-        <Text style={styles.label}>Mã số sinh viên</Text>
+        <Text style={styles.label}>MSSV</Text>
         <Text style={styles.value}>{studentId ?? ""}</Text>
       </View>
     </SafeAreaView>
@@ -28,6 +28,16 @@ export default function Page2() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 20, backgroundColor: "#fff" },
+  backButton: {
+    width: 40,
+    height: 40,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 20,
+    backgroundColor: "#000",
+    marginTop: 8,
+  },
+  backButtonText: { color: "#fff", fontSize: 26, fontWeight: "700" },
   information: { marginTop: 32 },
   title: {
     marginBottom: 28,
@@ -37,15 +47,4 @@ const styles = StyleSheet.create({
   },
   label: { marginTop: 14, color: "#6B7280", fontSize: 14 },
   value: { marginTop: 4, color: "#111827", fontSize: 18, fontWeight: "600" },
-  button: {
-    alignSelf: "flex-start",
-    minWidth: 120,
-    alignItems: "center",
-    marginTop: 8,
-    paddingHorizontal: 28,
-    paddingVertical: 12,
-    borderRadius: 8,
-    backgroundColor: "#111827",
-  },
-  buttonText: { color: "#fff", fontSize: 16, fontWeight: "600" },
 });

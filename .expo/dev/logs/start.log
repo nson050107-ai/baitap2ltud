@@ -1939,3 +1939,110 @@
 {"_e":"metro:client_log","_t":1790670405713,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
 {"_e":"metro:client_log","_t":1790670405713,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
 {"_e":"metro:client_log","_t":1790670405793,"level":"warn","data":["[Reanimated] Reduced motion setting is enabled on this device. This warning is visible only in the development mode. Some animations will be disabled by default. You can override the behavior for individual animations, see https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#reduced-motion-setting-is-enabled-on-this-device."]}
+{"_e":"root:init","_t":1791268768679,"format":"v0-jsonl","version":"57.0.27"}
+{"_e":"env:mode","_t":1791268768705,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791268768729,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1791268785838,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\src\\app","serverComponents":false,"serverActions":false,"serverRendering":true,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1791268800913,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":true,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1791268807061,"plugins":[]}
+{"_e":"metro:instantiate","_t":1791268819519,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"root:init","_t":1791268880986,"format":"v0-jsonl","version":"57.0.27"}
+{"_e":"env:mode","_t":1791268880988,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791268880991,"mode":"development","files":[],"env":{}}
+{"_e":"root:init","_t":1791268889975,"format":"v0-jsonl","version":"57.0.27"}
+{"_e":"env:mode","_t":1791268889976,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791268889979,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1791268890489,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\src\\app","serverComponents":false,"serverActions":false,"serverRendering":true,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1791268891025,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":true,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1791268891371,"plugins":[]}
+{"_e":"metro:instantiate","_t":1791268897371,"atlas":false,"workers":8,"host":"::","port":8082}
+{"_e":"metro:bundling:started","_t":1791268962778,"id":"2","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:started","_t":1791268962779,"id":"3","platform":"web","environment":"node","entry":"node_modules\\@expo\\router-server\\node\\render.js"}
+{"_e":"metro:bundling:done","_t":1791268972900,"id":"3","total":1318,"ms":10120.8348}
+{"_e":"metro:bundling:done","_t":1791268974064,"id":"2","total":1283,"ms":11285.9577}
+{"_e":"metro:bundling:started","_t":1791268974119,"id":"4","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:done","_t":1791268974975,"id":"4","total":1069,"ms":855.2985}
+{"_e":"metro:client_log","_t":1791268975544,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1791268975546,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1791268975604,"level":"warn","data":["[Reanimated] Reduced motion setting is enabled on this device. This warning is visible only in the development mode. Some animations will be disabled by default. You can override the behavior for individual animations, see https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#reduced-motion-setting-is-enabled-on-this-device."]}
+{"_e":"metro:bundling:started","_t":1791269823155,"id":"7","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:started","_t":1791269823156,"id":"8","platform":"web","environment":"node","entry":"node_modules\\@expo\\router-server\\node\\render.js"}
+{"_e":"metro:bundling:done","_t":1791269837995,"id":"8","total":1,"ms":14837.808}
+{"_e":"metro:bundling:done","_t":1791269841904,"id":"7","total":1,"ms":18749.0521}
+{"_e":"metro:bundling:started","_t":1791269842179,"id":"9","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:done","_t":1791269842595,"id":"9","total":1,"ms":415.1811}
+{"_e":"metro:client_log","_t":1791269844320,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1791269844323,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1791269844364,"level":"warn","data":["[Reanimated] Reduced motion setting is enabled on this device. This warning is visible only in the development mode. Some animations will be disabled by default. You can override the behavior for individual animations, see https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#reduced-motion-setting-is-enabled-on-this-device."]}
+{"_e":"metro:bundling:started","_t":1791269988812,"id":"c","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:started","_t":1791269988812,"id":"d","platform":"web","environment":"node","entry":"node_modules\\@expo\\router-server\\node\\render.js"}
+{"_e":"metro:bundling:done","_t":1791269989241,"id":"d","total":1,"ms":428.4315}
+{"_e":"metro:bundling:done","_t":1791269990277,"id":"c","total":1,"ms":1465.3661}
+{"_e":"metro:bundling:started","_t":1791269990393,"id":"e","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:done","_t":1791269990520,"id":"e","total":1,"ms":126.0774}
+{"_e":"metro:client_log","_t":1791269991532,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1791269991533,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1791269991666,"level":"warn","data":["[Reanimated] Reduced motion setting is enabled on this device. This warning is visible only in the development mode. Some animations will be disabled by default. You can override the behavior for individual animations, see https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#reduced-motion-setting-is-enabled-on-this-device."]}
+{"_e":"metro:bundling:started","_t":1791270037080,"id":"g","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:started","_t":1791270037081,"id":"h","platform":"web","environment":"node","entry":"node_modules\\@expo\\router-server\\node\\render.js"}
+{"_e":"metro:bundling:done","_t":1791270037786,"id":"h","total":1,"ms":705.0312}
+{"_e":"metro:bundling:done","_t":1791270039196,"id":"g","total":1,"ms":2115.2738}
+{"_e":"metro:bundling:started","_t":1791270039336,"id":"i","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:done","_t":1791270039541,"id":"i","total":1,"ms":204.1595}
+{"_e":"metro:client_log","_t":1791270040291,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1791270040292,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1791270040340,"level":"warn","data":["[Reanimated] Reduced motion setting is enabled on this device. This warning is visible only in the development mode. Some animations will be disabled by default. You can override the behavior for individual animations, see https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#reduced-motion-setting-is-enabled-on-this-device."]}
+{"_e":"metro:bundling:started","_t":1791270078779,"id":"l","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:started","_t":1791270078780,"id":"m","platform":"web","environment":"node","entry":"node_modules\\@expo\\router-server\\node\\render.js"}
+{"_e":"metro:bundling:done","_t":1791270078845,"id":"m","total":1,"ms":65.2706}
+{"_e":"metro:bundling:done","_t":1791270079352,"id":"l","total":1,"ms":572.5047}
+{"_e":"metro:bundling:started","_t":1791270079406,"id":"o","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:started","_t":1791270079406,"id":"p","platform":"web","environment":"node","entry":"node_modules\\@expo\\router-server\\node\\render.js"}
+{"_e":"metro:bundling:done","_t":1791270079478,"id":"p","total":1,"ms":71.7574}
+{"_e":"metro:bundling:started","_t":1791270079756,"id":"q","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:done","_t":1791270079819,"id":"q","total":1,"ms":62.8782}
+{"_e":"metro:bundling:done","_t":1791270079841,"id":"o","total":1,"ms":435.131}
+{"_e":"metro:bundling:started","_t":1791270079986,"id":"r","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:done","_t":1791270080028,"id":"r","total":1,"ms":42.1904}
+{"_e":"metro:client_log","_t":1791270080363,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1791270080364,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1791270080410,"level":"warn","data":["[Reanimated] Reduced motion setting is enabled on this device. This warning is visible only in the development mode. Some animations will be disabled by default. You can override the behavior for individual animations, see https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#reduced-motion-setting-is-enabled-on-this-device."]}
+{"_e":"metro:client_log","_t":1791270080470,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1791270080470,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1791270080527,"level":"warn","data":["[Reanimated] Reduced motion setting is enabled on this device. This warning is visible only in the development mode. Some animations will be disabled by default. You can override the behavior for individual animations, see https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#reduced-motion-setting-is-enabled-on-this-device."]}
+{"_e":"metro:bundling:started","_t":1791270108072,"id":"v","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:started","_t":1791270108072,"id":"w","platform":"web","environment":"node","entry":"node_modules\\@expo\\router-server\\node\\render.js"}
+{"_e":"metro:bundling:done","_t":1791270108116,"id":"w","total":1,"ms":44.2874}
+{"_e":"metro:bundling:done","_t":1791270108466,"id":"v","total":1,"ms":394.2804}
+{"_e":"metro:bundling:started","_t":1791270108492,"id":"x","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:done","_t":1791270108564,"id":"x","total":1,"ms":71.9053}
+{"_e":"metro:client_log","_t":1791270108903,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1791270108903,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1791270108917,"level":"warn","data":["[Reanimated] Reduced motion setting is enabled on this device. This warning is visible only in the development mode. Some animations will be disabled by default. You can override the behavior for individual animations, see https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#reduced-motion-setting-is-enabled-on-this-device."]}
+{"_e":"metro:bundling:started","_t":1791270649960,"id":"10","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:started","_t":1791270649960,"id":"11","platform":"web","environment":"node","entry":"node_modules\\@expo\\router-server\\node\\render.js"}
+{"_e":"metro:bundling:done","_t":1791270650162,"id":"11","total":1,"ms":202.2975}
+{"_e":"metro:bundling:done","_t":1791270650962,"id":"10","total":1,"ms":1002.5629}
+{"_e":"metro:bundling:started","_t":1791270651006,"id":"12","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:done","_t":1791270651081,"id":"12","total":1,"ms":75.3654}
+{"_e":"metro:client_log","_t":1791270651620,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1791270651620,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1791270651683,"level":"warn","data":["[Reanimated] Reduced motion setting is enabled on this device. This warning is visible only in the development mode. Some animations will be disabled by default. You can override the behavior for individual animations, see https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#reduced-motion-setting-is-enabled-on-this-device."]}
+{"_e":"metro:bundling:started","_t":1791270738046,"id":"14","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:started","_t":1791270738046,"id":"15","platform":"web","environment":"node","entry":"node_modules\\@expo\\router-server\\node\\render.js"}
+{"_e":"metro:bundling:done","_t":1791270738258,"id":"15","total":1,"ms":211.9222}
+{"_e":"metro:bundling:done","_t":1791270738862,"id":"14","total":1,"ms":816.658}
+{"_e":"metro:bundling:started","_t":1791270738902,"id":"16","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:done","_t":1791270739000,"id":"16","total":1,"ms":96.7918}
+{"_e":"metro:client_log","_t":1791270739625,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1791270739625,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1791270739727,"level":"warn","data":["[Reanimated] Reduced motion setting is enabled on this device. This warning is visible only in the development mode. Some animations will be disabled by default. You can override the behavior for individual animations, see https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#reduced-motion-setting-is-enabled-on-this-device."]}
+{"_e":"metro:bundling:started","_t":1791270814298,"id":"18","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:started","_t":1791270814298,"id":"19","platform":"web","environment":"node","entry":"node_modules\\@expo\\router-server\\node\\render.js"}
+{"_e":"metro:bundling:done","_t":1791270814592,"id":"19","total":1,"ms":293.3713}
+{"_e":"metro:bundling:done","_t":1791270816085,"id":"18","total":1,"ms":1786.2154}
+{"_e":"metro:bundling:started","_t":1791270816141,"id":"1a","platform":"web","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:done","_t":1791270816241,"id":"1a","total":1,"ms":99.5171}
+{"_e":"metro:client_log","_t":1791270816725,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1791270816726,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1791270817025,"level":"warn","data":["[Reanimated] Reduced motion setting is enabled on this device. This warning is visible only in the development mode. Some animations will be disabled by default. You can override the behavior for individual animations, see https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#reduced-motion-setting-is-enabled-on-this-device."]}
